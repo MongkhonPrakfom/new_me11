@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+      <html lang="ms">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <!-- Include Bootstrap CSS -->
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+          <!-- Include Font Awesome -->
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+          <title>Sign Up</title>
+      </head>
+      <body class="bg-light">
+      
+          <!-- Header/Navbar -->
+          <nav class="navbar navbar-expand-lg navbar-light bg-white">
+              <div class="container">
+              <a class="navbar-brand" href="#">MySystem</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                  <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link active" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="register.html">Sign Up</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                  </li>
+                  </ul>
+              </div>
+              </div>
+          </nav>
+        
+          <div class="container d-flex justify-content-center align-items-center min-vh-100">
+              <div class="row shadow-lg rounded-4 overflow-hidden bg-white w-100" style="max-width: 900px;">
+              
+                  <!-- Right Illustration Section -->
+                  <div class="col-md-6 d-flex justify-content-center align-items-center text-white" style="background-color: #007bff;">
+                      <div class="text-center p-4">
+                          <img src="img/login.png" class="img-fluid mb-4" alt="Illustration" style="max-width: 80%;" />
+                          <h4 class="fw-semibold">Sudah Ada Akaun?</h4>
+                          <p>Daftar untuk akses akaun anda.</p>
+                          <a href="register.html" class="btn btn-outline-light rounded-pill px-4 py-2 mt-2">Daftar Account</a>
+                      </div>
+                  </div>
+                  <!-- Left Form Section -->
+                  <div class="col-md-6 p-5">
+                      <h2 class="mb-4 text-center fw-bold">Log In</h2>
+                      
+                      <form action="#" method="POST">
+                          <div class="mb-3">
+                              <label for="email" class="form-label">Email</label>
+                              <div class="input-group">
+                              <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                              <input type="email" id="email" name="email" class="form-control"/>
+                              </div>
+                          </div>
+      
+                          <div class="mb-3">
+                              <label for="password" class="form-label">Kata Laluan</label>
+                              <div class="input-group">
+                              <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                              <input type="password" id="password" name="password" class="form-control"/>
+                              </div>
+                          </div>
+      
+                          <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="remember" />
+                              <label class="form-check-label" for="remember">Ingat saya</label>
+                          </div>
+      
+                          <button type="submit" class="btn btn-primary w-100" onclick="showError(event)">Daftar Sekarang</button>
+      
+                          <!-- Modal Ralat -->
+                           <div class="modal fade" id="ralatModal" tabindex="-1" aria-labelledby="ralatLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                  <div class="modal-content">
+                                      <div class="modal-header bg-danger text-white">
+                                          <h5 class="modal-title" id="ralatLabel">Ralat</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                                      </div>
+                                      <div class="modal-body">
+                                          Sila Masukkan Email dan Password yang benar!
+                                      </div>
+                                      <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+                                      </div>
+                                  </div>
+                              </div>
+                           </div>
+                      </form>
+      
+                      <!-- Divider with text -->
+                      <div class="d-flex align-items-center my-4">
+                          <hr class="flex-grow-1" />
+                          <span class="px-3 text-muted">atau daftar dengan</span>
+                          <hr class="flex-grow-1" />
+                      </div>
+      
+                      <!-- Social Buttons -->
+                      <div class="d-flex justify-content-center gap-2">
+                          <button class="btn btn-outline-primary">
+                              <i class="fab fa-facebook-f me-1"></i> Facebook
+                          </button>
+                          <button class="btn btn-outline-danger">
+                              <i class="fab fa-google me-1"></i> Google
+                          </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+          
+          <!-- Footer -->
+          <footer class="bg-light text-center text-lg-start mt-5 border-top">
+              <div class="text-center text-dark p-3 ">
+              © 2025 MySystem. All rights reserved.
+              </div>
+          </footer>
+        
+          <!-- Include Bootstrap JS (optional, for interactivity like modals, dropdowns) -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+          <script src="js/login.js"></script>
+      </body>
+      </html>
+      
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/button.js"></script>
+</body>
+</html>
