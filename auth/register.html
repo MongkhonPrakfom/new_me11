@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <title>Sign Up</title>
+</head>
+    <body class="bg-light">
+
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="row shadow-lg rounded-4 overflow-hidden bg-white w-100" style="max-width: 900px;">
+        
+        <!-- Left Form Section -->
+        <div class="col-md-6 p-5">
+            <h2 class="mb-4 text-center fw-bold">Daftar Akaun</h2>
+            
+            <form action="#" method="POST">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                    <input type="email" id="email" name="email" class="form-control"/>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">Kata Laluan</label>
+                    <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                    <input type="password" id="password" name="password" class="form-control"/>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="confirm_password" class="form-label">Sahkan Kata Laluan</label>
+                    <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                    <input type="password" id="confirm_password" name="confirm_password" class="form-control"/>
+                    </div>
+                </div>
+
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="remember" />
+                    <label class="form-check-label" for="remember">Ingat saya</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100" onclick="showError(event)">Daftar Sekarang</button>
+
+                <div class="modal fade" id="ralatModal" tabindex="-1" aria-labelledby="ralatLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-danger text-white">
+                                <h5 class="modal-title" id="ralatLabel">Ralat</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                            </div>
+                            <div class="modal-body">
+                                Sila Masukkan Semua Maklumat yang berkenaan!
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Divider with text -->
+            <div class="d-flex align-items-center my-4">
+            <hr class="flex-grow-1" />
+            <span class="px-3 text-muted">atau daftar dengan</span>
+            <hr class="flex-grow-1" />
+            </div>
+
+            <!-- Social Buttons -->
+            <div class="d-flex justify-content-center gap-2">
+            <button class="btn btn-outline-primary">
+                <i class="fab fa-facebook-f me-1"></i> Facebook
+            </button>
+            <button class="btn btn-outline-danger">
+                <i class="fab fa-google me-1"></i> Google
+            </button>
+            </div>
+        </div>
+
+        <!-- Right Illustration Section -->
+        <div class="col-md-6 d-flex justify-content-center align-items-center text-white" style="background-color: #007bff;">
+            <div class="text-center p-4">
+            <img src="img/signup.png" class="img-fluid mb-4" alt="Illustration" style="max-width: 80%;" />
+            <h4 class="fw-semibold">Sudah Ada Akaun?</h4>
+            <p>Log masuk untuk akses akaun anda.</p>
+            <a href="index.html" class="btn btn-outline-light rounded-pill px-4 py-2 mt-2">Log Masuk</a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/register.js"></script>
+    </body>
+</html>
